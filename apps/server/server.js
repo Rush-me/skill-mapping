@@ -53,7 +53,7 @@ require("./routes/skill.routes")(app);
 
 
 
-app.listen(port, '192.168.44.35', () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Server started on rush-me.github.io and port ${port}`);
 });
 
