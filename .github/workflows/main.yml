@@ -27,3 +27,8 @@ jobs:
         run: npm run build
       - name: Start Server
         run: npm run server
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: dist/skill-matrics
