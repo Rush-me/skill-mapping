@@ -1,0 +1,13 @@
+<div class="grid-container">
+
+    <div class="component-header">
+        <mat-label class="title">Employee Details</mat-label>
+        <div class="action-container">
+            <mat-icon class="icon medium-icon centered-icon" title="Add a new User" (click)="handleAddClick()">person_add</mat-icon>
+            <mat-icon class="icon medium-icon center-aligned-icon" title="Export data"  (click)="handleExportClick()">pin_invoke</mat-icon>
+        </div>
+    </div>
+    <div class="grid">
+        <app-grid [context]="context" [columnDefs]="colDefs" [rowData]="employees" (gridReady)="onGridReady($event)"></app-grid>
+    </div>
+</div>

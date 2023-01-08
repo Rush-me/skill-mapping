@@ -1,0 +1,33 @@
+<div class="filter-container">
+  <mat-form-field class="example-full-width" appearance="outline">
+    <input matInput type="search" placeholder="Search employee ID or name" (keyup)="onSearch($event)"
+      (search)="onSearch($event)">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+  <div class="filters">
+    <div class="title-container">
+      <mat-icon class="medium-icon icon left-aligned-icon static-icon">filter_alt</mat-icon>
+      <mat-label class="title">Filter By</mat-label>
+    </div>
+    <mat-form-field appearance="outline">
+      <mat-label>Skills</mat-label>
+      <mat-select multiple (selectionChange)="onSkillsFilter($event)">
+        <mat-option *ngFor="let skill of skills" [value]="skill.name">
+          {{skill.name}}
+        </mat-option>
+      </mat-select>
+      <mat-hint></mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Level</mat-label>
+      <mat-select multiple (selectionChange)="onLevelFilter($event)">
+        <mat-option *ngFor="let level of levels" [value]="level.name">
+          {{level.name}}
+        </mat-option>
+      </mat-select>
+      <mat-hint></mat-hint>
+    </mat-form-field>
+  </div>
+
+
+</div>

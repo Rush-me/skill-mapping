@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    background-color: whitesmoke;
+  }
+
+  .icon {
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    &:hover {
+        color:rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .right-aligned-icon {
+    margin-left: 12px;
+  }
+
+  .left-aligned-icon {
+    margin-right: 12px;
+  }
+
+  .center-aligned-icon {
+    margin: 12px;
+  }
+
+  .medium-icon {
+    font-size: 32px;
+    height: 32px !important;
+    width: 32px !important;
+  }
+
+  .default-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+  }
+
+  .mat-mdc-dialog-container {
+    padding: 12px 24px !important;
+    box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%) !important;
+    background: #fff !important;
+    color: rgba(0,0,0,.87) !important;
+    border-radius: 8px !important;
+  }
+
+  .mat-mdc-dialog-container .mdc-dialog__surface {
+    box-shadow: none !important;
+   
+  }
+
+  .mdc-dialog__title {
+    padding: 0 0 12px 0 !important;
+  }
+  

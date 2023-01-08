@@ -1,0 +1,9 @@
+<ag-grid-angular #agGrid
+    style="width: 100%; min-height: 350px;height: 500px;" 
+    class="ag-theme-alpine"
+    [context]="context"
+    [rowData]="rowData" 
+    [gridOptions]="gridOptions"
+    [columnDefs]="columnDefs"
+    (gridReady)="onGridReady($event)">
+</ag-grid-angular>

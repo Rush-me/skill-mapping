@@ -1,0 +1,14 @@
+
+
+    <mat-label mat-dialog-title>{{ title }}</mat-label>
+    <!-- <button type="button" class="close" aria-label="Close" (click)="onClose()">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+
+  <div mat-dialog-content>
+    {{ message }}
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onClose()">{{ cancelButtonText }}</button>
+    <button mat-button [mat-dialog-close]="employeeInfo" cdkFocusInitial>{{ confirmButtonText }}</button>
+</div>
