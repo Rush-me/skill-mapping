@@ -10,7 +10,7 @@ import { Employee } from '../../states/employee/employee.model';
 export class ConformationPopupComponent {
 
     public title = 'Conform';
-    public message: string = 'Are you sure want to delete?'
+    public message = 'Are you sure want to delete?'
     public confirmButtonText = 'Yes';
     public cancelButtonText = 'No Thanks';
     public employeeInfo: Employee;

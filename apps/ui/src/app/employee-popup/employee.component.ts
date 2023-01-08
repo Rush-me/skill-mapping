@@ -14,7 +14,7 @@ import { EmployeesState } from '../states/employee/employee.state';
 })
 export class EmployeePoupupComponent implements OnInit {
 
-  public titleText: string = 'Add a new User';
+  public titleText = 'Add a new User';
   public employeeInfo: Employee;
   public skills: Skill[] = [];
   public actionButtonText = 'Add';

@@ -1,5 +1,5 @@
-import { DeleteRowRenderer } from "./renderers/delete-renderer.component";
-import { EditRowRenderer } from "./renderers/edit-renderer.component";
+import { DeleteRowRendererComponent } from "./renderers/delete-renderer.component";
+import { EditRowRendererComponent } from "./renderers/edit-renderer.component";
 
 export function getColumnDefinition(): Array<object> {
   return [
@@ -53,14 +53,14 @@ export function getColumnDefinition(): Array<object> {
       headerName: 'Edit',
       field: 'edit',
       sortable: false,
-      cellRenderer: EditRowRenderer,
+      cellRenderer: EditRowRendererComponent,
       width: 80,
     },
     {
       headerName: 'Delete',
       field: 'delete',
       sortable: false,
-      cellRenderer: DeleteRowRenderer,
+      cellRenderer: DeleteRowRendererComponent,
       width: 100,
     }
   ];

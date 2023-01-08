@@ -3,11 +3,11 @@ import {ICellRendererAngularComp} from 'ag-grid-angular';
 import {ICellRendererParams} from "ag-grid-community";
 
 @Component({
-   selector: 'delete-renderer-component',
+   selector: 'app-delete-renderer-component',
    template: `<mat-icon class="icon default-icon centered-icon" title="Delete row" (click)="buttonClicked()">delete</mat-icon>`,
    styles: [':host { height: 100%; display: flex; align-items: center; }']
 })
-export class DeleteRowRenderer implements ICellRendererAngularComp {
+export class DeleteRowRendererComponent implements ICellRendererAngularComp {
     public params: ICellRendererParams = {} as ICellRendererParams;
    // gets called once before the renderer is used
    agInit(params: ICellRendererParams): void {

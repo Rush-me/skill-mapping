@@ -20,7 +20,7 @@
             "outputPath": "dist/skill-matrics",
             "index": "apps/ui/src/index.html",
             "main": "apps/ui/src/main.ts",
-            "baseHref": "/employees/",
+            "baseHref": "/skill-mapping/",
             "polyfills": [
               "zone.js"
             ],
@@ -100,8 +100,22 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/ui/**/*.ts",
+              "apps/ui/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

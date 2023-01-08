@@ -49,9 +49,9 @@ export class FiltersComponent implements OnInit {
   this.debounce(this.filterData, 500)(data);
 }
 
-  private debounce(func: Function, delay=100) {
+  private debounce(func: any, delay=100) {
     let timer: any;
-    let that = this;
+    const that = this;
 
     return function(string: string) {
       clearTimeout(timer);
@@ -66,7 +66,7 @@ export class FiltersComponent implements OnInit {
   }
 
   private filterData(data: any) {
-    let filter = {skills: this.selectedSkills, level: this.selectedLevels, name: this.searchStr};
+    const filter = {skills: this.selectedSkills, level: this.selectedLevels, name: this.searchStr};
     console.log(filter, ' filter');
     this.store.dispatch(new FilterData(filter));
   }

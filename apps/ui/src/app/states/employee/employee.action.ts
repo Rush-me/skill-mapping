@@ -2,8 +2,6 @@ import { Employee, Filters } from "./employee.model";
 
 export class GetAllEmployees {
   public static readonly type = '[Employee] Get All Employees';
-
-  constructor() {}
 }
 
 export class AddNewEmployee {
@@ -44,7 +42,5 @@ export class FilterData {
 
 export class GetAllSkills {
   public static readonly type = '[Employee] Get All Skills';
-
-  constructor() {}
 }
 

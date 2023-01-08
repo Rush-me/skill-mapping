@@ -3,11 +3,11 @@ import {ICellRendererAngularComp} from 'ag-grid-angular';
 import {ICellRendererParams} from "ag-grid-community";
 
 @Component({
-   selector: 'edit-renderer-component',
+   selector: 'app-edit-renderer-component',
    template: `<mat-icon class="icon default-icon centered-icon" title="Update row" (click)="buttonClicked()">edit_note</mat-icon>`,
    styles: [':host { height: 100%; display: flex;align-items: center; }']
 })
-export class EditRowRenderer implements ICellRendererAngularComp {
+export class EditRowRendererComponent implements ICellRendererAngularComp {
     public params: ICellRendererParams = {} as ICellRendererParams;
 
    // gets called once before the renderer is used

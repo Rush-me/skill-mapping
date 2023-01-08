@@ -13,8 +13,8 @@ import { NgxsModule } from '@ngxs/store';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeePoupupComponent } from './employee-popup/employee.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { EditRowRenderer } from './grid-container/renderers/edit-renderer.component';
-import { DeleteRowRenderer } from './grid-container/renderers/delete-renderer.component';
+import { EditRowRendererComponent } from './grid-container/renderers/edit-renderer.component';
+import { DeleteRowRendererComponent } from './grid-container/renderers/delete-renderer.component';
 import { ConformationPopupComponent } from './components/conformation-popup/conformation-popup.component';
 
 @NgModule({
@@ -25,8 +25,8 @@ import { ConformationPopupComponent } from './components/conformation-popup/conf
     GridContainerComponent,
     GridComponent,
     EmployeePoupupComponent,
-    EditRowRenderer,
-    DeleteRowRenderer,
+    EditRowRendererComponent,
+    DeleteRowRendererComponent,
     ConformationPopupComponent
   ],
   imports: [
