@@ -25,7 +25,7 @@ app.use(cors(corsOptions));
 const db = require("./models");
 const Role = db.role;
 db.mongoose
-  .connect(`mongodb://${db.dbConfig.HOST}:${db.dbConfig.PORT}/${db.dbConfig.DB}`, {
+  .connect(`mongodb+srv://rasmiranjan:thales123@cluster0.r95o8ho.mongodb.net/employee_db?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -53,8 +53,8 @@ require("./routes/skill.routes")(app);
 
 
 
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+app.listen(port, '192.168.44.35', () => {
+  console.log(`Server started on rush-me.github.io and port ${port}`);
 });
 
 function initial() {
