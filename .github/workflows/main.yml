@@ -32,3 +32,5 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: dist/skill-matrics
+          env:
+          SECRET_API_KEY: ${{ secrets.APP-SECRET}}
